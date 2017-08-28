@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+textarea, input, div, fieldset{
+	padding: 0;
+	margin: 0;
+}
+fieldset{
+	width: 500px;
+	padding: 10px;
+	margin: 10px auto;
+}
+textarea{
+	width: 99.33333333%;
+	resize: none;
+}
+input[type="button"]{
+	width: 49.46%;
+}
+.inputs{
+	width: 100%;
+	margin-bottom: 4px;
+}
+
+#text-input1-task3, #text-input2-task3{
+	width: 48.999999999%;
+}
+
+.t3{
+	width: 50%;
+	float: left;
+	margin-bottom: 4px;
+	text-align: center;
+}
