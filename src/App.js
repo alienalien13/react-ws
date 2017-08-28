@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Task1 from './Task1.js';
 import Task2 from './Task2.js';
+import Task3 from './Task3.js';
 
 class App extends Component {
 	render() {
@@ -10,6 +11,7 @@ class App extends Component {
 			<article>
 				<Task1/>
 				<Task2/>
+				<Task3/>
 			</article>
 		);
 	}
