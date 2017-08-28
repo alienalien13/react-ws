@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class Task3 extends Component {
@@ -19,8 +18,7 @@ class Task3 extends Component {
 	}
 
 	summArgs(pull){
-		var args = [],
-			summ = 0;
+		var summ = 0;
 
 		if (pull) {
 			for (let i = 0; i < pull.length; i++){

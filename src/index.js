@@ -15,13 +15,10 @@ window.onload = () => {
 
 	function clickHandle(){
 
-		var count = 1;
-
 		btn2Task2.removeEventListener('click', clickHandle)
 		btn2Task2.addEventListener('click', secondClickHandle)
 
 		function secondClickHandle(){
-			count++
 			textOutTask2.value = 'Double click, second option';
 		}
 
