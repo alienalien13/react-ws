@@ -45,11 +45,11 @@ class Task1 extends Component {
 		<fieldset title="task1" className="task1-field">
 			<legend>Task 1</legend>
 			
-			<div>First letter to toUpperCase</div>
+			<div>First letter toUpperCase</div>
 			<textarea id="text-input-task1" placeholder="Fill in this textarea by a several words" defaultValue={''} value={this.state.inputText} onChange={this.onChangeInput1}/>
 			<textarea id="text-output-task1" placeholder="Output task1" defaultValue={''} value={this.state.outputText}/>
 
-			<div>Each letter to toUpperCase</div>
+			<div>Each first letter toUpperCase</div>
 			<textarea id="text-input2-task1" placeholder="Fill in this textarea by a several words" defaultValue={''} value={this.state.inputText} onChange={this.onChangeInput2}/>
 			<textarea id="text-output2-task1" placeholder="Output task1" defaultValue={''} value={this.state.outputText2}/>
 

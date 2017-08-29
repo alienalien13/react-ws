@@ -5,11 +5,11 @@ class Task1 extends Component {
 
 	render() {
 		return (
-			<fieldset title="task1" className="task1-field">
-				<legend>Task 1</legend>
+			<fieldset title="task2" className="task1-field">
+				<legend>Task 2</legend>
 				
-				<input type="button" value="Double click first option" id="btn2-task2"/>
-				<textarea id="text-output-task2" placeholder="Output task1"/>
+				<input type="button" value="Double click" id="btn2-task2"/>
+				<textarea id="text-output-task2" placeholder="Output task2"/>
 
 			</fieldset>
 		);

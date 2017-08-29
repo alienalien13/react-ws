@@ -7,7 +7,9 @@ class Task4 extends Component {
 		super(props);
 		this.state = {};
 
-		this.onClickHandle = this.onClickHandle.bind(this);
+		this.onClickHandle1 = this.onClickHandle1.bind(this);
+		this.onClickHandle2 = this.onClickHandle2.bind(this);
+		this.resultGen = this.resultGen.bind(this);
 		this.authorsStructurize = this.authorsStructurize.bind(this);
 		this.stringGenerator = this.stringGenerator.bind(this);
 		this.teamCoOp = this.teamCoOp.bind(this);
@@ -133,25 +135,39 @@ class Task4 extends Component {
 
 	}
 
-	onClickHandle(){
-
+	resultGen(team){
 		var auts = this.authorsStructurize();
 		
 		var newAuts = auts.filter( (author) => {
-			if (author.team === 'Webscope 1') return author
+			if (author.team === team) return author
 		} )
 
-		console.log(this.stringGenerator(newAuts));
-		console.log(this.teamCoOp( newAuts )); 
+		var result = [this.stringGenerator(newAuts), '----------', this.teamCoOp( newAuts )].join('\n');
+		this.setState({
+			str: result
+		})
+	}
+
+	onClickHandle1(){
+
+		this.resultGen('Webscope 1');
+		
+	}
+
+	onClickHandle2(){
+		
+		this.resultGen('Webscope 2');
+		
 	}
 
 	render() {
 		return (
-			<fieldset title="task1" className="task1-field">
-				<legend>Task 1</legend>
+			<fieldset title="task4" className="task1-field">
+				<legend>Task 4</legend>
 				
-				<input type="button" value="Double click first option" id="btn2-task2" onClick={this.onClickHandle}/>
-				<textarea id="text-output-task2" placeholder="Output task1"/>
+				<input type="button" value="Webscope 1" id="btn1-task4" onClick={this.onClickHandle1}/>
+				<input type="button" value="Webscope 2" id="btn1-task4" onClick={this.onClickHandle2}/>
+				<textarea id="text-output-task4" rows="10" placeholder="Output task4" value={this.state.str}/>
 
 			</fieldset>
 		);

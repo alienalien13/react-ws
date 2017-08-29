@@ -70,13 +70,13 @@ class Task3 extends Component {
 				<legend>Task 3</legend>
 				
 				<div>
-					<div>coolAdd()</div>
-					<div>coolAdd()()</div>
-					<textarea id="text-input1-task3" placeholder="Output task1" onChange={this.onChangeCall}/>
-					<textarea id="text-input2-task3" placeholder="Output task1" onChange={this.onChangeReturnCall}/>
+					<div className='t3d'>coolAdd()</div>
+					<div className='t3d'>coolAdd()()</div>
+					<textarea id="text-input1-task3" placeholder="Fill in numbers separated by spaces" onChange={this.onChangeCall}/>
+					<textarea id="text-input2-task3" placeholder="Fill in numbers separated by spaces" onChange={this.onChangeReturnCall}/>
 				</div>
 
-				<textarea id="text-output-task3" placeholder="Output task1" defaultValue={''} value={this.state.result}/>
+				<textarea id="text-output-task3" placeholder="Output task3" defaultValue={''} value={this.state.result}/>
 
 			</fieldset>
 		);
