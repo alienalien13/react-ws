@@ -56,11 +56,12 @@ class Task3 extends Component {
 	onChangeReturnCall(ev){
 
 		var	val2 = ev.target.value;
-	
-		this.setState( (prevState) => ({
-				res2: this.coolAdd(prevState.val1)(val2.split(' ')),
-				result: prevState.res1 + prevState.res2
-		  }));
+
+		this.setState({
+			result: this.state.res1 + this.coolAdd(this.state.val1)(val2.split(' ')),
+			res2: this.coolAdd(this.state.val1)(val2.split(' '))
+		});
+
 
 	}
 

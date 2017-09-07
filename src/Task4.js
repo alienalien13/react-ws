@@ -15,6 +15,7 @@ class Task4 extends Component {
 		this.teamCoOp = this.teamCoOp.bind(this);
 	}
 
+	// return new array, sorted by authors
 	authorsStructurize(){
 
 		var teams = this.props.teams,
@@ -54,6 +55,7 @@ class Task4 extends Component {
 
 	}
 
+	// return string contain info about which author has written which articles
 	stringGenerator(array){
 		
 		let strings = [];
@@ -106,6 +108,7 @@ class Task4 extends Component {
 
 	}
 
+	// return string - info about how much articles was co-authored with which team
 	teamCoOp(team){
 
 		var teamArts = []
@@ -135,6 +138,7 @@ class Task4 extends Component {
 
 	}
 
+	// eventually text
 	resultGen(team){
 		var auts = this.authorsStructurize();
 		
